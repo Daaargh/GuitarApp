@@ -1,0 +1,5 @@
+C:\Users\pande\source\repos\GuitarApp\GuitarApp\bin\publish\GuitarApp.exe
+C:\Users\pande\source\repos\GuitarApp\GuitarApp\bin\publish\GuitarApp.dll
+C:\Users\pande\source\repos\GuitarApp\GuitarApp\bin\publish\GuitarApp.deps.json
+C:\Users\pande\source\repos\GuitarApp\GuitarApp\bin\publish\GuitarApp.runtimeconfig.json
+C:\Users\pande\source\repos\GuitarApp\GuitarApp\bin\publish\GuitarApp.pdb

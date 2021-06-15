@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Font\KGTenThousandReasons.ttf" />
+    <None Remove="images\aBackground.jpg" />
+    <None Remove="images\applicationBackground.jpg" />
+    <None Remove="images\background.jpg" />
+    <None Remove="images\bBackground.jpg" />
+    <None Remove="images\gridBackground.jpg" />
+    <None Remove="images\guitar.jpg" />
+    <None Remove="images\notesButton.jpg" />
+    <None Remove="images\resetButton.jpg" />
+    <None Remove="images\TabConverterImage.jpg" />
+    <None Remove="images\tabConverterText.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Font\KGTenThousandReasons.ttf" />
+    <Resource Include="images\aBackground.jpg" />
+    <Resource Include="images\applicationBackground.jpg" />
+    <Resource Include="images\background.jpg" />
+    <Resource Include="images\bBackground.jpg" />
+    <Resource Include="images\notesButton.jpg" />
+    <Resource Include="images\resetButton.jpg" />
+    <Resource Include="images\TabConverterImage.jpg" />
+    <Resource Include="images\tabConverterText.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModel\HelperMethods\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,313 @@
+﻿<Window x:Class="GuitarApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:GuitarApp.ViewModel"
+        xmlns:local="clr-namespace:GuitarApp"
+        mc:Ignorable="d"
+        Title="Tab Converter" Height="700" Width="1200" ResizeMode="NoResize">
+    <Window.Resources>
+        <vm:GuitarViewModel x:Key="vm"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource vm}">
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/applicationBackground.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <!--<Image Grid.Column="0"
+               Margin="20"
+               Source="/images/guitar.jpg"/>-->
+        <StackPanel Grid.Column="1">
+            <Image Source="/images/TabConverterImage.jpg"
+                   Margin="80, 30, 100, 0"/>
+            <Grid Margin="90, 0, 90, 0">
+                <Grid.Resources>
+                    <Style TargetType="TextBox" BasedOn="{StaticResource InputTextBoxes}"/>
+                    <Style TargetType="TextBlock" BasedOn="{StaticResource TextBlockStyle}"/>
+                </Grid.Resources>
+                <Grid.Background>
+                    <ImageBrush ImageSource="/images/bBackground.jpg" Stretch="Fill"/>
+                </Grid.Background>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition
+                        Width="40"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition
+                        Width="40"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition
+                        Width="40"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition
+                        Width="14.6"/>
+                    <ColumnDefinition Width="25.4"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition
+                        Width="40"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition
+                        Width="40"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition
+                        Width="40"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition
+                        Width="40"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition
+                        Width="40"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition
+                        Width="40"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0"
+                           VerticalAlignment="Center"
+                           FontSize="18"
+                           Text="E"/>
+                <TextBlock Grid.Column="0"
+                           VerticalAlignment="Center"
+                           FontSize="18"
+                           Grid.Row="1"
+                           Text="B"/>
+                <TextBlock Grid.Column="0"
+                           VerticalAlignment="Center"
+                           FontSize="18"
+                           Grid.Row="2"
+                           Text="G"/>
+                <TextBlock Grid.Column="0"
+                           VerticalAlignment="Center"
+                           FontSize="18"
+                           Grid.Row="3"
+                           Text="D"/>
+                <TextBlock Grid.Column="0"
+                           VerticalAlignment="Center"
+                           FontSize="18"
+                           Grid.Row="4"
+                           Text="A"/>
+                <TextBlock Grid.Column="0"
+                           VerticalAlignment="Center"
+                           FontSize="18"
+                           Grid.Row="5"
+                           Text="E"/>
+
+                <TextBox Grid.Column="2"
+                         Grid.Row="0"
+                         Text="{Binding HighE1, Mode=TwoWay}"/>
+                <TextBox Grid.Column="4"
+                         Grid.Row="0"
+                         Text="{Binding HighE2, Mode=TwoWay}"/>
+                <TextBox Grid.Column="6"
+                         Grid.Row="0"
+                         Text="{Binding HighE3, Mode=TwoWay}"/>
+                <TextBox Grid.Column="8"
+                         Grid.Row="0"
+                         Text="{Binding HighE4, Mode=TwoWay}" Grid.ColumnSpan="2"/>
+                <TextBox Grid.Column="11"
+                         Grid.Row="0"
+                         Text="{Binding HighE5, Mode=TwoWay}"/>
+                <TextBox Grid.Column="13"
+                         Grid.Row="0"
+                         Text="{Binding HighE6, Mode=TwoWay}"/>
+                <TextBox Grid.Column="15"
+                         Grid.Row="0"
+                         Text="{Binding HighE7, Mode=TwoWay}"/>
+                <TextBox Grid.Column="17"
+                         Grid.Row="0"
+                         Text="{Binding HighE8, Mode=TwoWay}"/>
+                <TextBox Grid.Column="19"
+                         Grid.Row="0"
+                         Text="{Binding HighE9, Mode=TwoWay}"/>
+                <TextBox Grid.Column="21"
+                         Grid.Row="0"
+                         Text="{Binding HighE10, Mode=TwoWay}"/>
+
+                <TextBox Grid.Column="2"
+                         Grid.Row="1"
+                         Text="{Binding B1, Mode=TwoWay}"/>
+                <TextBox Grid.Column="4"
+                         Grid.Row="1"
+                         Text="{Binding B2, Mode=TwoWay}"/>
+                <TextBox Grid.Column="6"
+                         Grid.Row="1"
+                         Text="{Binding B3, Mode=TwoWay}"/>
+                <TextBox Grid.Column="8"
+                         Grid.Row="1"
+                         Text="{Binding B4, Mode=TwoWay}" Grid.ColumnSpan="2"/>
+                <TextBox Grid.Column="11"
+                         Grid.Row="1"
+                         Text="{Binding B5, Mode=TwoWay}"/>
+                <TextBox Grid.Column="13"
+                         Grid.Row="1"
+                         Text="{Binding B6, Mode=TwoWay}"/>
+                <TextBox Grid.Column="15"
+                         Grid.Row="1"
+                         Text="{Binding B7, Mode=TwoWay}"/>
+                <TextBox Grid.Column="17"
+                         Grid.Row="1"
+                         Text="{Binding B8, Mode=TwoWay}"/>
+                <TextBox Grid.Column="19"
+                         Grid.Row="1"
+                         Text="{Binding B9, Mode=TwoWay}"/>
+                <TextBox Grid.Column="21"
+                         Grid.Row="1"
+                         Text="{Binding B10, Mode=TwoWay}"/>
+
+                <TextBox Grid.Column="2"
+                         Grid.Row="2"
+                         Text="{Binding G1, Mode=TwoWay}"/>
+                <TextBox Grid.Column="4"
+                         Grid.Row="2"
+                         Text="{Binding G2, Mode=TwoWay}"/>
+                <TextBox Grid.Column="6"
+                         Grid.Row="2"
+                         Text="{Binding G3, Mode=TwoWay}"/>
+                <TextBox Grid.Column="8"
+                         Grid.Row="2"
+                         Text="{Binding G4, Mode=TwoWay}" Grid.ColumnSpan="2"/>
+                <TextBox Grid.Column="11"
+                         Grid.Row="2"
+                         Text="{Binding G5, Mode=TwoWay}"/>
+                <TextBox Grid.Column="13"
+                         Grid.Row="2"
+                         Text="{Binding G6, Mode=TwoWay}"/>
+                <TextBox Grid.Column="15"
+                         Grid.Row="2"
+                         Text="{Binding G7, Mode=TwoWay}"/>
+                <TextBox Grid.Column="17"
+                         Grid.Row="2"
+                         Text="{Binding G8, Mode=TwoWay}"/>
+                <TextBox Grid.Column="19"
+                         Grid.Row="2"
+                         Text="{Binding G9, Mode=TwoWay}"/>
+                <TextBox Grid.Column="21"
+                         Grid.Row="2"
+                         Text="{Binding G10, Mode=TwoWay}"/>
+
+                <TextBox Grid.Column="2"
+                         Grid.Row="3"
+                         Text="{Binding D1, Mode=TwoWay}"/>
+                <TextBox Grid.Column="4"
+                         Grid.Row="3"
+                         Text="{Binding D2, Mode=TwoWay}"/>
+                <TextBox Grid.Column="6"
+                         Grid.Row="3"
+                         Text="{Binding D3, Mode=TwoWay}"/>
+                <TextBox Grid.Column="8"
+                         Grid.Row="3"
+                         Text="{Binding D4, Mode=TwoWay}" Grid.ColumnSpan="2"/>
+                <TextBox Grid.Column="11"
+                         Grid.Row="3"
+                         Text="{Binding D5, Mode=TwoWay}"/>
+                <TextBox Grid.Column="13"
+                         Grid.Row="3"
+                         Text="{Binding D6, Mode=TwoWay}"/>
+                <TextBox Grid.Column="15"
+                         Grid.Row="3"
+                         Text="{Binding D7, Mode=TwoWay}"/>
+                <TextBox Grid.Column="17"
+                         Grid.Row="3"
+                         Text="{Binding D8, Mode=TwoWay}"/>
+                <TextBox Grid.Column="19"
+                         Grid.Row="3"
+                         Text="{Binding D9, Mode=TwoWay}"/>
+                <TextBox Grid.Column="21"
+                         Grid.Row="3"
+                         Text="{Binding D10, Mode=TwoWay}"/>
+
+                <TextBox Grid.Column="2"
+                         Grid.Row="4"
+                         Text="{Binding A1, Mode=TwoWay}"/>
+                <TextBox Grid.Column="4"
+                         Grid.Row="4"
+                         Text="{Binding A2, Mode=TwoWay}"/>
+                <TextBox Grid.Column="6"
+                         Grid.Row="4"
+                         Text="{Binding A3, Mode=TwoWay}"/>
+                <TextBox Grid.Column="8"
+                         Grid.Row="4"
+                         Text="{Binding A4, Mode=TwoWay}" Grid.ColumnSpan="2"/>
+                <TextBox Grid.Column="11"
+                         Grid.Row="4"
+                         Text="{Binding A5, Mode=TwoWay}"/>
+                <TextBox Grid.Column="13"
+                         Grid.Row="4"
+                         Text="{Binding A6, Mode=TwoWay}"/>
+                <TextBox Grid.Column="15"
+                         Grid.Row="4"
+                         Text="{Binding A7, Mode=TwoWay}"/>
+                <TextBox Grid.Column="17"
+                         Grid.Row="4"
+                         Text="{Binding A8, Mode=TwoWay}"/>
+                <TextBox Grid.Column="19"
+                         Grid.Row="4"
+                         Text="{Binding A9, Mode=TwoWay}"/>
+                <TextBox Grid.Column="21"
+                         Grid.Row="4"
+                         Text="{Binding A10, Mode=TwoWay}"/>
+
+                <TextBox Grid.Column="2"
+                         Grid.Row="5"
+                         Text="{Binding LowE1, Mode=TwoWay}"/>
+                <TextBox Grid.Column="4"
+                         Grid.Row="5"
+                         Text="{Binding LowE2, Mode=TwoWay}"/>
+                <TextBox Grid.Column="6"
+                         Grid.Row="5"
+                         Text="{Binding LowE3, Mode=TwoWay}"/>
+                <TextBox Grid.Column="8"
+                         Grid.Row="5"
+                         Text="{Binding LowE4, Mode=TwoWay}" Grid.ColumnSpan="2"/>
+                <TextBox Grid.Column="11"
+                         Grid.Row="5"
+                         Text="{Binding LowE5, Mode=TwoWay}"/>
+                <TextBox Grid.Column="13"
+                         Grid.Row="5"
+                         Text="{Binding LowE6, Mode=TwoWay}"/>
+                <TextBox Grid.Column="15"
+                         Grid.Row="5"
+                         Text="{Binding LowE7, Mode=TwoWay}"/>
+                <TextBox Grid.Column="17"
+                         Grid.Row="5"
+                         Text="{Binding LowE8, Mode=TwoWay}"/>
+                <TextBox Grid.Column="19"
+                         Grid.Row="5"
+                         Text="{Binding LowE9, Mode=TwoWay}"/>
+                <TextBox Grid.Column="21"
+                         Grid.Row="5"
+                         Text="{Binding LowE10, Mode=TwoWay}"/>
+
+            </Grid>
+            <StackPanel Orientation="Horizontal"
+                        Margin="100, 30, 00, 0">
+                <Button Style="{StaticResource MyButton}"
+                        Command="{Binding NoteQueryCommand}">
+                    <Image Source="/images/notesButton.jpg"/>
+                </Button>
+
+                <Button Style="{StaticResource MyButton}"
+                        Margin="50, 0, 0, 0"
+                        Command="{Binding ClearTextboxesCommand}">
+                    <Image Source="/images/resetButton.jpg"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
