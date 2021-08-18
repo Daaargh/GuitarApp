@@ -846,14 +846,14 @@ namespace GuitarApp.ViewModel
 
                     else
                     {
-                        MessageBox.Show("It only goes up ti 24 frets, arsehole!", "Impudent Bastard", MessageBoxButton.OK, MessageBoxImage.Error);
+                        MessageBox.Show("Enter a fret number between 1 and 24!", "Invalid fret number", MessageBoxButton.OK, MessageBoxImage.Error);
                         return "";
                     }
                 }
 
                 else
                 {
-                    MessageBox.Show($"Hiv ye ivver seen \"{setterValue}\" written in tab before?? No?? Well ye winna see it here either, arsehole! GET IT SORTED!!!", "Impudent Bastard", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show($"Invalid input", "Invalid input", MessageBoxButton.OK, MessageBoxImage.Error);
                     return "";
                 }
             }
